@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFFFFF;
+    color: #002035;
+}
+
+a{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+}
+
+.innerLink{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: #DC5800;
+
+}
+
+.logo{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: #DC5800;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    font-weight: 400;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: medium;
+    font-weight: 400;
+
+}

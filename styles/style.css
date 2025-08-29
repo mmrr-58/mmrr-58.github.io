@@ -8,32 +8,65 @@ body{
     color: #002035;
 }
 
-a{
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    font-family: "Montserrat", "sans-serif";
-    font-weight: 400;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.innerLink{
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    color: #DC5800;
-
+.hero{
+    width: 60%;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
-.logo{
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    color: #DC5800;
-}
-
 h1{
     font-family: "Montserrat", sans-serif;
-    font-size: large;
-    font-weight: 400;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 500;
+    margin-bottom: 0.5em;
 }
 
 h2{
     font-family: "Montserrat", sans-serif;
-    font-size: medium;
+    font-size: clamp(1rem, 1.5vw, 3rem);
     font-weight: 400;
-
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 60%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 0;
+  align-items: right;
+  gap: 2rem;
+}
+
+a{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+    color: #002035;
+    text-decoration:none;
+}
+
+.innerLink{
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    color: #DC5800;
+    text-decoration:none;
+}
+
+.logo{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    color: #DC5800;
+    text-decoration:none;
+}
+

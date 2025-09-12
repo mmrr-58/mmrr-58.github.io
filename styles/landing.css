@@ -1,0 +1,72 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  z-index: 100;
+  background-color: var(--bgColor);
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, .95) 0%,
+    rgba(255, 255, 255, .2) 100%
+  );
+  pointer-events: none;
+}
+
+.logo{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    color: #DC5800;
+    text-decoration:none;
+}
+
+
+.navLinks{
+  justify-content: flex-end;
+  margin-left: 15px; 
+  color: #002035;
+}
+
+.hero {
+  justify-content: center;
+  min-height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  max-width: 1200px;
+}
+
+.featured{
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.workCard{
+  margin-top: 150px;
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.innerLink{
+    font-size: clamp(1rem, 1.9vw, 3rem);
+}

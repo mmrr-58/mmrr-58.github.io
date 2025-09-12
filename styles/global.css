@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bgColor: #FFFFFF;
+    --textColor: #002035;
+    --highlightColor: #DC5800;
+    font-family: "Montserrat", sans-serif;
+      
+}
+
+::-moz-selection {
+  background: #DC5800;
+}
+
+::selection {
+  background: #DC5800DC;
+}
+
+h1{
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h2{
+    font-size: clamp(1rem, 2vw, 3rem);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+h3{
+    font-size: clamp(1rem, 2vw, 3rem);
+    font-weight: 400;
+}
+
+p{
+    font-size: clamp(1rem, 1vw, 3rem);
+    font-weight: 400;
+}
+
+body{
+    background-color: var(--bgColor);
+    color: var(--textColor);
+}
+
+a{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 400;
+    color: var(--highlightColor);
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}

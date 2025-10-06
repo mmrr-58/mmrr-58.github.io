@@ -1,19 +1,12 @@
-header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  width: 80%;
-  max-width: 1200px;
-  z-index: 100;
-  background-color: var(--bgColor);
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--bgColor);
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
 
-header::after {
+nav::after {
   content: '';
   position: absolute;
   bottom: -50px;
@@ -22,51 +15,75 @@ header::after {
   height: 50px;
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, .95) 0%,
-    rgba(255, 255, 255, .2) 100%
+    rgba(255, 255, 255, .95) 10%,
+    rgba(255, 255, 255, 0.1) 100%
   );
   pointer-events: none;
 }
 
-.logo{
-    font-size: clamp(0.8rem, 1vw, 1rem);
-    color: #DC5800;
-    text-decoration:none;
+.navContainer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 1rem 0;
+    width: 82%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.navMenu {
+    display: flex;
+    list-style-type: none;
+    align-items: left;
+    width: 100%;
+}
 
-.navLinks{
-  justify-content: flex-end;
-  margin-left: 15px; 
-  color: #002035;
+.logo {
+    font-size: clamp(1rem, 1vw, 3rem);
+    font-weight: 400;
+    color: #DC5800;
+    text-decoration: none;
+}
+
+.navMenu li a {
+    text-decoration: none;
+    color: #DC5800;
+    padding: 0.5rem 1rem;
+}
+
+.fadeOnSticky {
+    opacity: 0;
+    transition: all .2s;
+    pointer-events: none;
+}
+
+nav.is-stuck .fadeOnSticky {
+    opacity: 1;
+    transition: all .2s;
+    pointer-events: all;
 }
 
 .hero {
-  justify-content: center;
-  min-height: 50vh;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 150px;
-  max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    min-height: 20vh;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.featured{
+.strikeOut {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+.featured {
     display: flex;
     justify-content: left;
     width: 80%;
     margin: 0 auto;
-    margin-top: 150px;
-}
-
-.workCard{
-  margin-top: 150px;
-  display: flex;
-  flex-direction:column;
-  justify-content: left;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.innerLink{
-    font-size: clamp(1rem, 1.9vw, 3rem);
+    margin-top: 500px;
+    padding-bottom: 100px;
 }

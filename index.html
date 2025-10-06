@@ -10,29 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="resources/tempLogo.png">
+    <script src="scripts/stickyNavBar.js" defer></script>
   </head>
-  <body>
-    <header class="navMenu">
-      <div>
-        <a href="index.html" class="logo">Marek Roque</a>
-      </div>
-      <nav>
-        <a href="https://www.linkedin.com/in/marek-roque-3a0117279/" target="_blank" class="navLinks">LinkedIn</a>
-        <a href="mailto:marekroque58@gmail.com" class="navLinks">Email</a>
-      </nav>
-    </header>
-    <div class="hero">    
-        <h1>Hi, I’m Marek, a Creative Technology student based in The Netherlands.</h1>
-        <h3>Here, you’ll be able to find <a href="projects.html", class="innerLink">projects</a> that I’ve worked on, 
-        <a href="skills.html", class="innerLink">skills</a> I’m developing, and <a href="thoughts.html", class="innerLink">thoughts</a> I’ve written down.</h3>
+<body>
+<nav class="navBar" id="navbar">
+    <div class="navContainer">
+        <ul class="navMenu">
+            <li class="logo"><a href="index.html">Marek Roque</a></li>
+            <li class="fadeOnSticky"><a href="https://linkedin.com">linkedin</a></li>
+            <li class="fadeOnSticky"><a href="mailto:marekroque58@gmail.com">Email</a></li>
+        </ul>
     </div>
-    <div class="featured">
-      <h2>My Featured Work</h2>
-    </div>
-      <div class="workCard">
-        <h3>Garden App</h3>
-        <p>A personal relationship manager made for maintaining positive long-term connections</p>
-        <img src="resources/gardenImage.png" alt="Image of the Garden prototype app">
+</nav>
+
+<div class="hero">
+    <p class="heroWords">
+        <span class="strikeOut">Soon to be Designer...</span>
+        <span class="strikeOut">Engineer...</span>
+        Creative Technology student based in the Netherlands
+    </p>
+    <p class="heroWords">Please excuse ongoing creative processes</p>
+</div>
+  <div class="featured">
+    <img src="resources/gardenImage.png" alt="Image of my project: Garden">
+        <div id="leftTopText">
+          <p>Garden.md is a personal relationship manager (PRM) centered around maintenance of quality relationships that so that they may flourish.</p>
+          <p class="Note">Active development stalled while I'm learning Flutter</p>
+        </div>
       </div>
     </div>
   </body>

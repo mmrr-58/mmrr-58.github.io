@@ -1,0 +1,37 @@
+:root{
+    --bgColor: #FFFFFF;
+    --textColor: #002035;
+    --highlightColor: #DC5800;
+    --decorativeColor: #a2a2a2;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    min-height: 20vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vw;
+    max-width: 1200px;
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 0;
+    margin-left: 1em; /* Space for the bullet */
+}
+
+.strikeOut {
+    text-decoration: line-through;
+    color: var(--decorativeColor);
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.note{
+    color: var(--decorativeColor)
+}

@@ -78,8 +78,8 @@ nav.is-stuck .fadeOnSticky {
     width: 50%;
 }
 
-#temporaryImage{
-    max-width: 50%;
+#playfulIntelligenceImage{
+    max-width: 100%;
     height: auto;
     object-fit: contain;
 }

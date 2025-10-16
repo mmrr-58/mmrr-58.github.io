@@ -60,6 +60,7 @@ function handleSelection() {
 
 document.addEventListener('DOMContentLoaded', function() {
     wrapWords('.content p');
+    wrapWords('#featured p')
     
     document.addEventListener('selectionchange', handleSelection);
     document.addEventListener('mouseup', handleSelection);

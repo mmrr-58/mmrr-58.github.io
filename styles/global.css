@@ -22,27 +22,20 @@
     src: url("montserrat-v31-latin-regular.woff2") format("woff2");
 }
 
+::selection {
+    background: transparent;
+}
+
+::-moz-selection {
+    background: transparent;
+}
+
 .navBar {
     position: sticky;
     top: 0;
     background-color: var(--bgColor);
     transition: all 0.3s ease;
     z-index: 1000;
-}
-
-nav::after {
-  content: '';
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, .95) 10%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  pointer-events: none;
 }
 
 .navContainer {
@@ -87,11 +80,7 @@ a{
     font-size: clamp(1rem, 1vw, 3rem);
     font-weight: 400;
     color: var(--highlightColor);
-    text-decoration:none;
-}
-
-a:hover{
-    text-decoration:underline;
+    text-decoration: none;
 }
 
 span.word {
@@ -122,10 +111,7 @@ span.word.selected::after {
     transition: width 0.3s ease;
 }
 
-::selection {
-    background: transparent;
-}
+img{
+    border-radius: 5px;
 
-::-moz-selection {
-    background: transparent;
 }

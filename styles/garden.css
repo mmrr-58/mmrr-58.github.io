@@ -1,0 +1,15 @@
+.gallery{
+    display: flex;
+    width: 100%;
+}
+
+.gardenImage{
+    margin: 2%;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

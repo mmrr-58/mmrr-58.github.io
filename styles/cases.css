@@ -47,3 +47,10 @@ ul {
     margin-top: 400px;
     margin-bottom: 400px;
 }
+
+.gallery{
+    display: flex;
+    width: 30%;
+    height: auto;
+    margin: 1vw
+}

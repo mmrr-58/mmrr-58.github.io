@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --bgColor: #FFFFFF;
     --textColor: #002035;

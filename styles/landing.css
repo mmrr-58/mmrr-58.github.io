@@ -41,6 +41,10 @@ nav.is-stuck .fadeOnSticky {
     color: var(--decorativeColor);
 }
 
+.bold{
+    font-weight: 600;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -65,7 +69,13 @@ nav.is-stuck .fadeOnSticky {
 
 .note{
     color: var(--decorativeColor)
+}
 
+.skills{
+    font-size: clamp(.5rem, 1vw, 1rem);
+    font-weight: 400;
+    margin-bottom: 1em;
+    color: var(--decorativeColor);
 }
 
 #topContent{
@@ -73,6 +83,7 @@ nav.is-stuck .fadeOnSticky {
     justify-content: left;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 5vw;
 }
 
 #topLeft{

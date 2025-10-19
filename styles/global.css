@@ -18,6 +18,11 @@ html{
 
 @font-face {
     font-family: "Montserrat";
+    src: url("montserrat-v31-latin-800.woff2");
+}
+
+@font-face {
+    font-family: "Montserrat";
     src: url("montserrat-v31-latin-600.woff2") format("woff2");
 }
 
@@ -61,16 +66,8 @@ html{
   margin: 0;
 }
 
-.logo {
-    font-size: clamp(1rem, 1vw, 3rem);
-    font-weight: 400;
-    color: var(--highlightColor);
-    text-decoration: none;
-    justify-content: left;
-}
-
 p{
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 3rem);
     font-weight: 400;
     margin-bottom: 1em;
 }
@@ -81,7 +78,7 @@ body{
 }
 
 a{
-    font-size: clamp(1rem, 1vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 3rem);
     font-weight: 400;
     color: var(--highlightColor);
     text-decoration: none;

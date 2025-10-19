@@ -1,7 +1,7 @@
 const nav = document.getElementById('navbar');
 let hasScrolled = false;
 
-nav.style.marginTop = '40vh';
+nav.style.marginTop = '35vh';
 
 nav.classList.remove('is-stuck');
 

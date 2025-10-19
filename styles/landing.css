@@ -10,7 +10,8 @@
 .navMenu li a {
     text-decoration: none;
     color: var(--highlightColor);
-    padding-right: 1em;
+    padding-right: 2em;
+    font-size: clamp(1em, 1vw, 3em );
 }
 
 nav .fadeOnSticky {
@@ -34,6 +35,12 @@ nav.is-stuck .fadeOnSticky {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.mylogo{
+    font-weight: 800;
+    font-size: clamp(2rem, 10vw, 10rem);
+    margin-left: -0.1em;
 }
 
 .strikeOut {
@@ -147,6 +154,22 @@ nav.is-stuck .fadeOnSticky {
 @media screen and (max-width: 600px){
     #topContent{
         flex-direction: column;
+        margin-bottom: 0vw;
     }
-    
+    #topLeft{
+        margin-bottom: 10vw;
+        width: 100%;
+    }
+    #topRight{
+        width: 100%;
+    }
+    #bottomLeft{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+:target {
+  scroll-margin-top: 45vh;
 }

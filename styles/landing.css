@@ -72,7 +72,7 @@ nav.is-stuck .fadeOnSticky {
 }
 
 .skills{
-    font-size: clamp(.5rem, 1vw, 1rem);
+    font-size: clamp(.8rem, 1vw, 1rem);
     font-weight: 400;
     margin-bottom: 1em;
     color: var(--decorativeColor);
@@ -80,7 +80,7 @@ nav.is-stuck .fadeOnSticky {
 
 #topContent{
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 5vw;
@@ -88,7 +88,19 @@ nav.is-stuck .fadeOnSticky {
 
 #topLeft{
     display: flex;
+    flex-direction: column;
     width: 50%;
+
+}
+
+#topLeftText{
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+#enschedeImage{
+    width: 80%;
+    height: auto;
 }
 
 #gardenImage{
@@ -97,20 +109,14 @@ nav.is-stuck .fadeOnSticky {
     object-fit: contain;
 }
 
-#topLeftText{
-    margin-left: 16px;
-    margin-right: 16px;
-
-}
-
 #topRight{
     display:flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
 }
 
 #playfulIntelligenceImage{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     object-fit: contain;
 }
@@ -128,17 +134,19 @@ nav.is-stuck .fadeOnSticky {
 
 #bottomLeft{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 50%;
-    margin-top: 20px;
-}
-
-#enschedeImage{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
 }
 
 #bottomLeftText{
     margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 600px){
+    #topContent{
+        flex-direction: column;
+    }
+    
 }

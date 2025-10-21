@@ -115,3 +115,7 @@ span.word.selected::after {
 img{
     border-radius: 5px;
 }
+
+.bold{
+    font-weight: 600;
+}

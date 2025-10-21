@@ -48,10 +48,6 @@ nav.is-stuck .fadeOnSticky {
     color: var(--decorativeColor);
 }
 
-.bold{
-    font-weight: 600;
-}
-
 .content{
     display: flex;
     flex-direction: column;

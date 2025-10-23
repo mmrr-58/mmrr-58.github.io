@@ -28,6 +28,10 @@ nav.is-stuck .fadeOnSticky {
     max-width: 1200px;
 }
 
+.heroWords{
+    margin-top: 5vw;
+}
+
 .mylogo{
     font-weight: 800;
     font-size: clamp(2rem, 10vw, 10rem);

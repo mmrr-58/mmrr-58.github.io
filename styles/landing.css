@@ -1,8 +1,35 @@
+.navBar {
+    position: sticky;
+    top: 0;
+    background-color: var(--bgColor);
+    transition: all 0.3s ease;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navMenu {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 .navMenu li a {
     text-decoration: none;
     color: var(--highlightColor);
     padding-right: 2em;
     font-size: clamp(1em, 1vw, 3em );
+    font-weight: 500;
 }
 
 nav .fadeOnSticky {
@@ -30,12 +57,7 @@ nav.is-stuck .fadeOnSticky {
 
 .heroWords{
     margin-top: 5vw;
-}
-
-.mylogo{
-    font-weight: 800;
-    font-size: clamp(2rem, 10vw, 10rem);
-    margin-left: -0.1em;
+    color: var(--textColor)
 }
 
 .strikeOut {
@@ -62,7 +84,7 @@ nav.is-stuck .fadeOnSticky {
     align-items: center;
     margin: 0 auto;
     margin-top: 400px;
-    margin-bottom: 400px;
+    margin-bottom: 30vw;
 }
 
 .note{
@@ -157,6 +179,9 @@ nav.is-stuck .fadeOnSticky {
     #bottomLeft{
         flex-direction: column;
         width: 100%;
+    }
+    #bottomLeftText{
+        margin-left: 0px
     }
 
 }

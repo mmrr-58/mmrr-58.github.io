@@ -8,7 +8,7 @@ html{
 }
 
 :root{
-    --bgColor: #FFFFFF;
+    --bgColor: #ffffff;
     --textColor: #002035;
     --highlightColor: #DC5800;
     --decorativeColor: #a2a2a2;
@@ -32,44 +32,11 @@ html{
 }
 
 ::selection {
-    background: transparent;
+    background: #CD580050;
 }
 
 ::-moz-selection {
     background: transparent;
-}
-
-.navBar {
-    position: sticky;
-    top: 0;
-    background-color: var(--bgColor);
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.navContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem 0;
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.navMenu {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-p{
-    font-size: clamp(1rem, 1.5vw, 3rem);
-    font-weight: 400;
-    margin-bottom: 1em;
 }
 
 body{
@@ -77,43 +44,41 @@ body{
     color: var(--textColor);
 }
 
+h1{
+    font-weight: 800;
+    font-size: clamp(2rem, 8vw, 10rem);
+    margin-left: -0.1em;
+
+}
+
+h2{
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 8rem);
+    margin-bottom: 1em;
+}
+
+p{
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
 a{
     font-size: clamp(1rem, 1.5vw, 3rem);
-    font-weight: 400;
+    font-weight: 500;
     color: var(--highlightColor);
     text-decoration: none;
 }
 
-span.word {
-    position: relative;
-    display: inline-block;
-}
-
-span.word::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background-color: var(--highlightColor);
-    opacity: .3;
-    transition: width 0.3s ease;
-}
-
-span.word:hover::after {
-    width: 100%;
-}
-
-span.word.selected::after {
-    width: 100%;
-    background-color: var(--highlightColor);
-    opacity: 1;
-    transition: width 0.3s ease;
+a:hover{
+    text-decoration: underline;
 }
 
 img{
     border-radius: 5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .bold{

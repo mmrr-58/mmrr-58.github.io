@@ -5,13 +5,30 @@
     --decorativeColor: #a2a2a2;
 }
 
+.navBar{
+    position: sticky;
+    top: 0;
+}
+.navMenu{
+    background-color: var(--bgColor);
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+h2{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
 .content{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     min-height: 20vh;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 10vw;
     max-width: 1200px;
@@ -20,7 +37,7 @@
 ul {
     list-style-position: outside;
     padding-left: 0;
-    margin-left: 1em; /* Space for the bullet */
+    margin-left: 1em;
 }
 
 .strikeOut {
@@ -29,7 +46,7 @@ ul {
 }
 
 .bold{
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .note{

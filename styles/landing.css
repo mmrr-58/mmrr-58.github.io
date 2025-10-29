@@ -44,6 +44,10 @@ nav.is-stuck .fadeOnSticky {
   pointer-events: all;
 }
 
+.showMobile{
+    display: none;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -73,6 +77,19 @@ nav.is-stuck .fadeOnSticky {
     margin: 0 auto;
     margin-top: 400px;
     max-width: 1200px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    min-height: 20vh;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10vw;
+    max-width: 1200px;
+
 }
 
 .footer{
@@ -182,6 +199,15 @@ nav.is-stuck .fadeOnSticky {
     }
     #bottomLeftText{
         margin-left: 0px
+    }
+    .showMobile{
+        display: block;
+    }
+    .hideMobile{
+        display: none;
+    }
+    .text{
+        width: 100%
     }
 
 }

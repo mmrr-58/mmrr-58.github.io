@@ -17,18 +17,18 @@ html{
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-v31-latin-800.woff2");
+    font-family: "Montserrat-regular";
+    src: url("montserrat-v31-latin-regular.woff2") format(woff2);
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-v31-latin-600.woff2") format("woff2");
+    font-family: "Manrope-500";
+    src: url('manrope-v20-latin-500.woff2') format(woff2);
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("montserrat-v31-latin-regular.woff2") format("woff2");
+    font-family: "Manrope-regular";
+    src: url('manrope-v20-latin-regular.woff2') format(woff2);
 }
 
 ::selection {
@@ -36,7 +36,7 @@ html{
 }
 
 ::-moz-selection {
-    background: transparent;
+    background: #CD580050;
 }
 
 body{
@@ -45,27 +45,26 @@ body{
 }
 
 h1{
-    font-weight: 800;
-    font-size: clamp(2rem, 8vw, 10rem);
+    font-family: 'Montserrat-regular';
+    font-size: clamp(3rem, 8vw, 10rem);
     margin-left: -0.1em;
-
 }
 
 h2{
-    font-weight: 800;
+    font-family: 'Montserrat-regular';
     font-size: clamp(2rem, 4vw, 8rem);
     margin-bottom: 1em;
 }
 
 p{
+    font-family: 'Manrope-regular';
     font-size: clamp(1rem, 1.5vw, 3rem);
-    font-weight: 500;
     margin-bottom: 1em;
 }
 
 a{
+    font-family: "Manrope-regular";
     font-size: clamp(1rem, 1.5vw, 3rem);
-    font-weight: 500;
     color: var(--highlightColor);
     text-decoration: none;
 }
@@ -82,5 +81,5 @@ img{
 }
 
 .bold{
-    font-weight: 600;
+    font-family: 'Manrope-500';
 }

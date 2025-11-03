@@ -12,7 +12,6 @@ html{
     --textColor: #002035;
     --highlightColor: #DC5800;
     --decorativeColor: #a2a2a2;
-    font-family: "Montserrat", sans-serif;
       
 }
 
@@ -22,13 +21,13 @@ html{
 }
 
 @font-face {
-    font-family: "Manrope-500";
-    src: url('manrope-v20-latin-500.woff2') format(woff2);
+    font-family: "OpenSans-500";
+    src: url('open-sans-v44-latin-500.woff2') format(woff2);
 }
 
 @font-face {
-    font-family: "Manrope-regular";
-    src: url('manrope-v20-latin-regular.woff2') format(woff2);
+    font-family: "OpenSans-regular";
+    src: url('open-sans-v44-latin-regular.woff2') format(woff2);
 }
 
 ::selection {
@@ -57,13 +56,13 @@ h2{
 }
 
 p{
-    font-family: 'Manrope-regular';
-    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-family: "OpenSans-regular";
+    font-size: clamp(1rem, 1vw, 3rem);
     margin-bottom: 1em;
 }
 
 a{
-    font-family: "Manrope-regular";
+    font-family: "OpenSans-regular";
     font-size: clamp(1rem, 1.5vw, 3rem);
     color: var(--highlightColor);
     text-decoration: none;
@@ -81,5 +80,5 @@ img{
 }
 
 .bold{
-    font-family: 'Manrope-500';
+    font-family: 'OpenSans-500';
 }

@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.gallery{
+    display: flex;
+    width: 100%;
+}
+
+.galleryImage{
+    width: 50%;
+    height: auto;
+    margin: 5px;
+}

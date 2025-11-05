@@ -209,6 +209,9 @@ nav.is-stuck .fadeOnSticky {
     .text{
         width: 100%
     }
+    .navMenu{   
+        justify-content: center;
+    }
 
 }
 

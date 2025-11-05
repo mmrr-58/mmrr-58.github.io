@@ -63,7 +63,7 @@ p{
 
 a{
     font-family: "OpenSans-regular";
-    font-size: clamp(1rem, 1.5vw, 3rem);
+    font-size: clamp(1rem, 1vw, 3rem);
     color: var(--highlightColor);
     text-decoration: none;
 }

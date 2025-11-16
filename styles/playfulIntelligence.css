@@ -1,10 +1,11 @@
 .gallery{
     display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
 .galleryImage{
     width: 50%;
-    height: auto;
+    height: 50%;
     margin: 5px;
 }

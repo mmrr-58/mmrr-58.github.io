@@ -187,15 +187,16 @@ nav.is-stuck .fadeOnSticky {
         margin-bottom: 0vw;
     }
     #topLeft{
-        margin-bottom: 10vw;
         width: 100%;
     }
     #topRight{
+        margin-bottom: 20vw;
         width: 100%;
     }
     #bottomLeft{
         flex-direction: column;
         width: 100%;
+        margin-bottom: 20vw;
     }
     #bottomLeftText{
         margin-left: 0px

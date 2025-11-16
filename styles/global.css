@@ -55,6 +55,12 @@ h2{
     margin-bottom: 1em;
 }
 
+h3{
+    font-family: 'OpenSans-regular';
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    margin-top: 20px;
+}
+
 p{
     font-family: "OpenSans-regular";
     font-size: clamp(1rem, 1vw, 3rem);

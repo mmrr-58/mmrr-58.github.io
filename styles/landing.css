@@ -25,7 +25,7 @@
 }
 
 .navMenu li a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--highlightColor);
     padding-right: 2em;
     font-size: clamp(1em, 1vw, 3em );

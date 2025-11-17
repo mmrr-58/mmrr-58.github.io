@@ -27,7 +27,7 @@
 .navMenu li a {
     text-decoration: underline;
     color: var(--highlightColor);
-    padding-right: 2em;
+    margin-right: 2em;
     font-size: clamp(1em, 1vw, 3em );
     font-weight: 500;
 }
@@ -131,7 +131,6 @@ nav.is-stuck .fadeOnSticky {
 }
 
 #topLeftText{
-    margin-top: 16px;
     margin-right: 16px;
 }
 
@@ -158,10 +157,6 @@ nav.is-stuck .fadeOnSticky {
     object-fit: contain;
 }
 
-#topRightText{
-    margin-top: 16px;
-}
-
 #bottomContent{
     display: flex;
     justify-content: left;
@@ -176,7 +171,6 @@ nav.is-stuck .fadeOnSticky {
 }
 
 #bottomLeftText{
-    margin-top: 16px;
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -214,7 +208,12 @@ nav.is-stuck .fadeOnSticky {
         justify-content: center;
 
     }
-
+    .navMenu li a {
+    margin-right: 3em;
+    }
+    #last{
+        margin-right: 0em;
+    }
 }
 
 :target {

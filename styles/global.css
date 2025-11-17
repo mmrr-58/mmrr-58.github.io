@@ -21,6 +21,11 @@ html{
 }
 
 @font-face {
+    font-family: "OpenSans-700";
+    src: url('open-sans-v44-latin-700.woff2') format(woff2);
+}
+
+@font-face {
     font-family: "OpenSans-500";
     src: url('open-sans-v44-latin-500.woff2') format(woff2);
 }
@@ -56,10 +61,11 @@ h2{
 }
 
 h3{
-    font-family: 'OpenSans-regular';
+    font-family: 'OpenSans-500';
     font-size: clamp(1.2rem, 2vw, 2rem);
     margin-top: 20px;
-    color: var(--highlightColor);
+    margin-bottom: 15px;
+    color: var(--textColor);
 }
 
 p{
@@ -71,7 +77,7 @@ p{
 a{
     font-family: "OpenSans-regular";
     font-size: clamp(1rem, 1vw, 3rem);
-    color: var(--textColor);
+    color: var(--highlightColor);
     text-decoration: underline;
 }
 
@@ -83,8 +89,8 @@ img{
 }
 
 .bold{
-    font-family: 'OpenSans-500';
-    color: var(--highlightColor)
+    font-family: 'OpenSans-700';
+    color: var(--textColor)
 }
 
 .note{

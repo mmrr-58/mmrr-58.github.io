@@ -1,0 +1,39 @@
+:target{
+    scroll-margin-top: 20vh;
+}
+.hero:target{
+    scroll-margin-top: 40vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navigation{
+    display: flex;                                                                                                                                                                           
+    justify-content: space-between;                                                                                                                                                                                      
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30vh;
+}
+
+.heroLeft{
+    flex: 1;
+}
+
+.heroRight{
+    text-align: right;
+    flex: 1;
+}

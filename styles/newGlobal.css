@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --backgroundColor: #f0f0f0;
+    --textColor: #000000;
+    --accentColor: #dc6e00;
+    --grayTextColor: #929292; 
+}
+
+@font-face {
+    font-family: "Roboto-regular";
+    src: url('fonts/roboto-v51-latin-regular.woff2') format(woff2);
+}
+
+body{
+    background-color: var(--backgroundColor);
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--backgroundColor);
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+p{
+    font-family: "Roboto-regular";
+    font-size: clamp(0.8em, 2vw, 1em);
+    color: var(--textColor);
+}
+
+a{
+    font-family: "Roboto-regular";
+    font-size: clamp(0.8em, 2vw, 1em);
+    color: var(--textColor);
+    text-decoration: underline;
+    text-decoration-color: #dc6e00;
+
+}
+
+a::after{
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background-image: url(../resources/Untitled.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.2em; 
+    vertical-align: 0.05em;
+}
+
+.gray{
+    color: var(--grayTextColor)
+}

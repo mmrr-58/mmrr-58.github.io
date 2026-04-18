@@ -5,6 +5,7 @@
     <title>Marek Roque</title>
     <link rel="stylesheet" href="styles/newGlobal.css">
     <link rel="stylesheet" href="styles/newHome.css">
+    <script src="scripts/videos.js" defer></script>
 </head>
 <body>
     <nav>
@@ -14,10 +15,15 @@
             <a href="#about">About Me</a>
         </div>
     </nav>
+    <div class="progressiveBlurContainer">
+        <div class="blurFilter"></div>
+        <div class="blurFilter"></div>
+        <div class="blurFilter"></div>
+    </div>
     <div class="content">
         <div class="hero" id="hero">
             <div class="heroLeft">
-                <p>Marek Roque</p>
+                <h1>Marek Roque</h1>
                 <p class="gray">Researching, Designing, and Writing</p>
             </div>
             <div class="heroRight">
@@ -28,14 +34,24 @@
             </div>
         </div>
         <div class="projects" id="projects">
-            <p>Some of my work</p>
+            <h2>Some of my work</h2>
             <div class="project">
-                <img src="" alt=""> <!--Add the images-->
-                <p>Project 1</p>
-                <p class="gray"> Description of the project</p>
+                <video
+                class="hoverVideo"
+                src="resources/enschedeAnimation.mp4"
+                muted
+                playsinline
+                preload="metadata"></video>
+                <a href="enschede.html" class="project">Discovering a City</a>
+                <p class="gray">A tourism project for Enschede Promotie</p>
             </div>
             <div class="project">
-                <img src="" alt=""> <!--Add the images-->
+                <video
+                class="hoverVideo"
+                src="resources/enschedeAnimation.mp4"
+                muted
+                playsinline
+                preload="metadata"></video>
                 <p>Project 2</p>
                 <p class="gray"> Description of the project</p>
             </div>
@@ -61,6 +77,10 @@
                     <a href="yo">contact@marekroque.com</a> <!--Add this later-->
                 </span>
             </p>
+        </div>
+        <div class="footer">
+            <p>I hope you enjoyed your stay</p>
+            <p>:)</p>
         </div>
     </div>
 </body>

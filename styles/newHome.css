@@ -27,6 +27,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30vh;
+    margin-bottom: 30vh;
 }
 
 .heroLeft{
@@ -36,4 +37,17 @@
 .heroRight{
     text-align: right;
     flex: 1;
+}
+
+.project{
+    margin-bottom: 150px;
+}
+
+video{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer{
+    height:1000px
 }

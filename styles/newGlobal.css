@@ -11,7 +11,7 @@ html{
     --backgroundColor: #f0f0f0;
     --textColor: #000000;
     --accentColor: #dc6e00;
-    --grayTextColor: #c1c1c1; 
+    --grayTextColor: #868686; 
 }
 
 @font-face {
@@ -31,46 +31,16 @@ nav{
     margin: 0 auto;
 }
 
-h1{
-    font-family: "Roboto-regular";
-    font-size: clamp(0.8em,2vw,1em);
-}
-
-h2{
-    font-family: "Roboto-regular";
-    font-size: clamp(0.8em,2vw,1em);
-    margin-bottom: 20px;
-}
-
-p{
-    font-family: "Roboto-regular";
+.navigation a{
     font-size: clamp(0.8em, 2vw, 1em);
-    color: var(--textColor);
 }
 
-a{
-    font-family: "Roboto-regular";
-    font-size: clamp(0.8em, 2vw, 1em);
-    color: var(--textColor);
-    text-decoration: underline;
-    text-decoration-color: #dc6e00;
-
-}
-
-a::after{
-    content: "";
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    background-image: url(../resources/Untitled.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 0.2em; 
-    vertical-align: 0.05em;
-}
-
-.gray{
-    color: var(--grayTextColor)
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    align-items: center;
 }
 
 .progressiveBlurContainer{
@@ -105,4 +75,47 @@ a::after{
 .progressiveBlurContainer > .blurFilter:nth-child(1) {
   backdrop-filter: blur(1px);
   mask: linear-gradient(rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 60%);
+}
+
+h1{
+    font-family: "Roboto-regular";
+    font-size: clamp(0.8em,2vw,1em);
+    font-weight: 400;
+}
+
+h2{
+    font-family: "Roboto-regular";
+    font-size: clamp(0.8em,2vw,1em);
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+p{
+    font-family: "Roboto-regular";
+    font-size: clamp(0.8em, 2vw, 1em);
+    color: var(--textColor);
+}
+
+a{
+    font-family: "Roboto-regular";
+    color: var(--textColor);
+    text-decoration: underline;
+    text-decoration-color: #dc6e00;
+
+}
+
+a::after{
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background-image: url(../resources/Untitled.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.2em; 
+    vertical-align: 0.05em;
+}
+
+.gray{
+    color: var(--grayTextColor)
 }

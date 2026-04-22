@@ -1,0 +1,59 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projectDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.descriptionSection{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.excerpt{
+    display: flex;
+    align-items: flex-start;
+    gap: 4%;
+    margin-bottom: 15vh;
+}
+
+.textWrapper{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+}
+
+.paragraph{
+    margin-bottom: 50px;
+}
+
+.imageWrapper{
+    flex: 1;
+    min-width: 0;
+    position: sticky;
+    top: 12vh;
+}
+
+.projectImage{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project{
+    margin-bottom: 150px;
+    font-size: clamp(0.8em, 2vw, 1em);
+}
+
+.footer{
+    height:1000px
+}

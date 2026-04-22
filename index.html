@@ -1,92 +1,87 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marek Roque - Portfolio</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/landing.css">
-    <link rel="icon" href="resources/tempLogo.png">
-    <script src="scripts/stickyNavBar.js" defer></script>
-  </head>
+    <title>Marek Roque</title>
+    <link rel="stylesheet" href="styles/newGlobal.css">
+    <link rel="stylesheet" href="styles/newHome.css">
+    <script src="scripts/videos.js" defer></script>
+</head>
 <body>
-  <nav class="navBar" id="navbar">
-      <div class="navContainer">
-          <ul class="navMenu">
-              <li><a href="#hero" class="hideMobile fadeOnSticky">Back To Top</a></li>
-              <li><a href="#hero" class="showMobile fadeOnSticky">Top</a></li>
-              <li><a href="#projects" class="fadeOnSticky">Projects</a></li>
-              <li><a href="#about" class="fadeOnSticky">About</a></li>
-              <li><a href="#contact" class="fadeOnSticky" id="last">Contact</a></li>
-          </ul>
-      </div>
-  </nav>
-  <div class="hero" id="hero">
-    <p class="heroWords">
-        <span class="strikeOut">Designer...</span>
-        <span class="strikeOut">Engineer...</span>
-        Creative Technology student based in the Netherlands
-    </p>
-    <h1>Marek Roque</h1>
-  </div>
-  <div class="content" id="projects">
-    <h2>Projects</h2>
-    <div id="topContent">
-      <div id="bottomLeft">
-        <img src="resources/gardenImage.png" alt="Image of my project: Garden" id="gardenImage">
-        <div id="bottomLeftText">
-          <h3>Garden</h3>
-          <p>a personal relationship manager (PRM) centered around maintenance of quality relationships so that they may flourish.</p>
-          <p class="skills">Skills: Blender, Figma, Mobile App Development</p>
-          <a href="gardenProject.html">Read More</a>
+    <nav>
+        <div class="navigation">
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Me</a>
         </div>
-      </div>
-      <div id="topRight">
-        <img src="resources/Pictures_PlayfulIntelligence/saltAndPepperRendered2.png" alt="Concept image of the project: Playful Intelligence" id="playfulIngelligenceImage">
-        <h3>Playful Intelligence</h3>
-        <p id="topRightText">
-          a children's artificial intelligence interface.
-        </p>
-        <p class="skills">Skills: Python, Co-Creation Workshops, Electronics</p>
-        <a href="playfulIntelligence.html">Read more</a>
-      </div>
+    </nav>
+    <div class="progressiveBlurContainer">
+        <div class="blurFilter"></div>
+        <div class="blurFilter"></div>
+        <div class="blurFilter"></div>
     </div>
-    <div id="bottomContent">
-      <div id="topLeft">
-        <img src="resources/Pictures_Tourism/Enschede.webp" alt="Image of the Enschede symbol in the city" id="enschedeImage">
-        <h3>Tourism Game for Enschede Promotie</h3>
-        <p id="topLeftText">
-          A project devoted to finding a clever way to gamify tourism of a city. Done in 
-          collaboration with Enschede Promotie
-        </p>
-        <p class="skills">Skills: Storyboarding, User Testing, Projection Mapping</p>
-        <a href="enschede.html">Read more</a>
-      </div>
-      <div id="bottomRight"> 
-      </div>
+    <div class="content">
+        <div class="hero" id="hero">
+            <div class="heroLeft">
+                <h1>Marek Roque</h1>
+                <p class="gray">Researching, Designing, and Writing</p>
+            </div>
+            <div class="heroRight">
+                <p>
+                    I'm a Creative Technology student at the University
+                    of Twente in the Netherlands. 
+                </p>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h2>Some of my work</h2>
+            <div class="project">
+                <video
+                class="hoverVideo"
+                src="resources/enschedeAnimation.mp4"
+                muted
+                playsinline
+                preload="metadata"></video>
+                <a href="enschede.html" class="project">Discovering a City</a>
+                <p class="gray">A tourism project for Enschede Promotie</p>
+            </div>
+            <div class="project">
+                <video
+                class="hoverVideo"
+                src="resources/planes.mp4"
+                muted
+                playsinline
+                preload="metadata"></video>
+                <a href="projectPageTemplate.html" class="project">Template For Now</a>
+                <p class="gray"> Description of the project</p>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <p>
+                Born and raised in Mexico, I eventually moved to
+                the Netherlands to pursue my passion for 
+                technology. I'm currently working with 
+                <span>
+                    <a href="yo">3D animation</a> <!--Add this later-->
+                </span>,
+                <span>
+                    <a href="yo">PCB design</a> <!--Add this later-->
+                </span>, and
+                <span>
+                    <a href="yo">data visualization</a> <!--Add this later-->
+                </span>.
+            </p>
+            <p>
+                You can find my contact information as: 
+                <span>
+                    <a href="yo">contact@marekroque.com</a> <!--Add this later-->
+                </span>
+            </p>
+        </div>
+        <div class="footer">
+            <p>I hope you enjoyed your stay</p>
+            <p>:)</p>
+        </div>
     </div>
-  </div>
-  <div class="content" id="about">
-    <h2>About me</h2>
-    <p class="text">
-      I'm a student who works at the intersection of technical challenges and joyful solutions. I believe the best experiences are both functional and emotionally resonant.
-      Design should solve problems while creating moments that stick with people. Currently exploring UX design, 3D modelling, and coding.
-    </p>
-  </div>
-  <div class="content" id="contact">
-    <h2>Contact</h2>
-    <div class="text">
-          <p>The easiest way to find me will be my <a href="mailto:marekmroque@gmail.com" target="_blank">email</a>, but you can also find me on 
-      <a href="https://www.linkedin.com/in/marek-roque-3a0117279/" target="_blank">linkedIn</a>, or <a href="https://x.com/marekroque" target="_blank">twitter</a>
-    </p>
-    <p>
-      You can also <a href="/resources/MarekRoqueCV.pdf" download="Marek Roque - Curriculum">download my CV</a>
-    </p>
-    </div>
-  </div> 
-  <div class="footer">
-    <p>I hope you enjoyed your stay</p>
-    <p>:)</p>
-  </div>
 </body>
 </html>

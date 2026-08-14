@@ -15,8 +15,8 @@ html{
 }
 
 @font-face {
-    font-family: "Roboto-regular";
-    src: url('fonts/roboto-v51-latin-regular.woff2') format(woff2);
+    font-family: "manrope-regular";
+    src: url('fonts/manrope-regular.woff2') format(woff2);
 }
 
 body{
@@ -78,26 +78,26 @@ nav{
 }
 
 h1{
-    font-family: "Roboto-regular";
+    font-family: "manrope-regular";
     font-size: clamp(0.8em,2vw,1em);
     font-weight: 400;
 }
 
 h2{
-    font-family: "Roboto-regular";
+    font-family: "manrope-regular";
     font-size: clamp(0.8em,2vw,1em);
     margin-bottom: 20px;
     font-weight: 400;
 }
 
 p{
-    font-family: "Roboto-regular";
+    font-family: "manrope-regular";
     font-size: clamp(0.8em, 2vw, 1em);
     color: var(--textColor);
 }
 
 a{
-    font-family: "Roboto-regular";
+    font-family: "manrope-regular";
     color: var(--textColor);
     text-decoration: underline;
     text-decoration-color: #dc6e00;

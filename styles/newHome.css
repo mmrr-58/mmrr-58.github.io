@@ -36,6 +36,11 @@
     font-size: clamp(0.8em, 2vw, 1em);
 }
 
+.contact{
+    margin-top: 150px;
+
+}
+
 video{
     width: 100%;
     margin-bottom: 20px;

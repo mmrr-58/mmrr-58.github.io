@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -49,6 +49,65 @@
     display: block;
 }
 
+/* Empty image slots show as a gray box until a src is filled in */
+.projectImage[src=""]{
+    aspect-ratio: 4 / 3;
+    min-height: 15vw;
+    background-color: #e2e2e2;
+    color: var(--grayTextColor);
+    font-family: "manrope-regular";
+}
+
+.imageRow{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.imageRow .projectImage{
+    flex: 1;
+    min-width: 0;
+}
+
+/* A row of images spanning the whole content width, between excerpts */
+.fullWidthRow{
+    gap: 4%;
+    margin-bottom: 15vh;
+}
+
+.imageStack{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textWrapper h2{
+    margin-bottom: 30px;
+}
+
+/* Page title and section titles */
+.main h1,
+.textWrapper h2{
+    font-weight: 600;
+}
+
+/* Large centered animation at the top of a project page */
+.heroMedia{
+    width: 60vw; /* 60% of the screen, not of the content column */
+    max-width: 100%;
+    margin: 5vh auto 10vh;
+}
+
+.essayList{
+    font-family: "manrope-regular";
+    font-size: clamp(0.8em, 2vw, 1em);
+    padding-left: 1.2em;
+}
+
+.essayList li{
+    margin-bottom: 10px;
+}
+
 .project{
     margin-bottom: 150px;
     font-size: clamp(0.8em, 2vw, 1em);
@@ -83,6 +142,10 @@
 
     .imageWrapper{
         position: static;
+        width: 100%;
+    }
+
+    .heroMedia{
         width: 100%;
     }
 }

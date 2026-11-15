@@ -11,4 +11,12 @@
       video.pause();
       video.currentTime = 0.01;
     });
+
+    // Clicking the animation opens the same page as the project's title link
+    const link = video.parentElement.querySelector('a');
+    if (link) {
+      video.addEventListener('click', () => {
+        window.location.href = link.href;
+      });
+    }
   });

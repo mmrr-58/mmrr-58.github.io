@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 15rem;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -46,6 +46,47 @@ video{
     margin-bottom: 20px;
 }
 
+.hoverVideo{
+    cursor: pointer;
+}
+
+.heroLogo{
+    height: 1.1em;
+    width: auto;
+    vertical-align: -0.2em;
+    margin-left: 0.15em;
+}
+
+.otherGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+}
+
+.otherItem{
+    font-size: clamp(0.8em, 2vw, 1em);
+}
+
+.otherImage{
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.otherItem p{
+    margin-top: 5px;
+}
+
+@media (max-width: 800px){
+    .otherGrid{
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+/* Space under the smiley so it rests in the bottom third of the screen */
 .footer{
-    height:1000px
+    padding-bottom: 25vh;
 }

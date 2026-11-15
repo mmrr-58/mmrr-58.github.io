@@ -13,6 +13,7 @@
             <a href="#hero">Home</a>
             <a href="#projects">Projects</a>
             <a href="#about">About Me</a>
+            <a href="#other">Other Work</a>
         </div>
     </nav>
     <div class="progressiveBlurContainer">
@@ -23,7 +24,7 @@
     <div class="content">
         <div class="hero" id="hero">
             <div class="heroLeft">
-                <h1>Marek Roque</h1>
+                <h1>Marek Roque <img src="resources/tempLogo.png" alt="" class="heroLogo"></h1>
                 <p class="gray">Creative Technology at the University of Twente</p>
             </div>
             <div class="heroRight">
@@ -37,22 +38,32 @@
             <div class="project">
                 <video
                 class="hoverVideo"
-                src="resources/enschedeAnimation.mp4"
+                src="resources/homeFiles/garden.mp4"
+                muted
+                playsinline
+                preload="metadata"></video>
+                <a href="gardenProject.html" class="project">I Just Missed My Friends</a>
+                <p class="gray">Garden, a different kind of relationship manager</p>
+            </div>
+            <div class="project">
+                <video
+                class="hoverVideo"
+                src="resources/homeFiles/aiPlanes.mp4"
+                muted
+                playsinline
+                preload="metadata"></video>
+                <a href="aiPlanes.html" class="project">Machines and Users</a>
+                <p class="gray">Tracking paper planes in real-time</p>
+            </div>
+            <div class="project">
+                <video
+                class="hoverVideo"
+                src="resources/homeFiles/enschede.mp4"
                 muted
                 playsinline
                 preload="metadata"></video>
                 <a href="enschede.html" class="project">Discovering a City</a>
                 <p class="gray">A tourism project for Enschede Promotie</p>
-            </div>
-            <div class="project">
-                <video
-                class="hoverVideo"
-                src="resources/planes.mp4"
-                muted
-                playsinline
-                preload="metadata"></video>
-                <a href="projectPageTemplate.html" class="project">Template For Now</a>
-                <p class="gray"> Description of the project</p>
             </div>
         </div>
         <div class="about" id="about">
@@ -60,26 +71,42 @@
                 Ever since I was little, I'm always fascinated by
                 technology, and how engineering intersects with product design. 
                 I moved to the Netherlands to pursue this passion as a creative
-                technologist. I'm currently working with
-                <span>
-                    <a href="yo">3D animation</a> <!--Add this later-->
-                </span>,
-                <span>
-                    <a href="yo">PCB design</a> <!--Add this later-->
-                </span>, and
-                <span>
-                    <a href="yo">data visualization</a> <!--Add this later-->
-                </span> to captivate human emotions
+                technologist. I'm currently working on 3D animation, PCB design, 
+                and writing to captivate human emotions
             </p>
             <div class="contact" id="contact">
                 <p>
-                You can find my contact information as: 
+                You can email me at
                 <span>
-                    <a href="mailto:contact@marekroque.com">contact@marekroque.com</a> <!--Add this later-->
+                    <a href="mailto:contact@marekroque.com">contact@marekroque.com</a>
+                </span>
+                find me on 
+                <span>
+                    <a href="https://x.com/marekroque?s=11">twitter</a>
+                </span>
+                or download my
+                <span>
+                    <a href="resources/CVMarekRoque.pdf" download="MarekRoqueCV.pdf">CV</a>
                 </span>
                 </p>
             </div>
-        
+
+        </div>
+        <div class="otherProjects" id="other">
+            <h2>Other Projects and Writing</h2>
+            <div class="otherGrid">
+                <div class="otherItem">
+                    <img src="resources/homeFiles/materials.png" alt="Materials essay cover" class="otherImage">
+                    <a href="materials.html">Materials</a>
+                    <p class="gray">An essay</p>
+                </div>
+                <div class="otherItem">
+                    <img src="resources/PlayfulIntelligence/saltAndPepperRendered2.png" alt="Playful Intelligence project" class="otherImage">
+                    <a href="playfulIntelligence.html">Playful Intelligence</a>
+                    <p class="gray">Envisioning the near future for children's toys</p>
+                </div>
+                <!-- Third slot: copy an .otherItem block here to add another project -->
+            </div>
         </div>
         <div class="footer">
             <p>I hope you enjoyed your stay</p>
